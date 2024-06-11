@@ -1,2 +1,17 @@
 .about {
+  //   height: 100vh;
+
+  &__content-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    & > p {
+      width: 50%;
+    }
+    & > img {
+      object-fit: contain;
+    }
+  }
 }

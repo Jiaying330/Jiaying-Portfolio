@@ -12,13 +12,13 @@ export default function Navbar() {
             </a>
           </li>
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <a href="#about" className="navbar__link">
               About
             </a>
           </li>
 
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <a href="#resume" className="navbar__link">
               Resume
             </a>
           </li>
