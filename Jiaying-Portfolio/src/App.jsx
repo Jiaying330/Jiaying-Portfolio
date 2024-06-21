@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Resume from "./components/Resume";
+import Projects from "./components/Project";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <Home />
       <About />
       <Resume />
+      <Projects />
     </>
   );
 }

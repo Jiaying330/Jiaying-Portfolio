@@ -6,16 +6,16 @@ export default function Item({ data }) {
   const { title, subTitle, time, descriptions } = data;
 
   return (
-    <div className="resume__item">
-      <div className="resume__item-left">
-        <p className="resume__time">{time}</p>
+    <div className="item">
+      <div className="item__left">
+        <p className="item__time">{time}</p>
       </div>
-      <div className="resume__item-right">
-        <h4 className="resume__item-title">{title}</h4>
-        <h5 className="resume__item-subtitle">{subTitle}</h5>
-        <ul className="resume__item-description resume__item-description-list">
+      <div className="item__right">
+        <h4 className="item__title">{title}</h4>
+        <h5 className="item__subtitle">{subTitle}</h5>
+        <ul className="item__descriptions">
           {descriptions.map((item) => {
-            return <li className="resume__item-description-item">{item}</li>;
+            return <li className="item__descriptions-item">{item}</li>;
           })}
         </ul>
       </div>

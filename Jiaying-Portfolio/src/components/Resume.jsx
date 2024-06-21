@@ -9,7 +9,7 @@ export default function Resume() {
     <>
       <section className="resume section-container" id="resume">
         <h2 className="section-title">Resume</h2>
-        <div className="resume__educations">
+        <div className="resume__educations" id="educations">
           <h3 className="resume__title">Education</h3>
           <div className="resume__items">
             {education.map((item) => (
@@ -18,7 +18,7 @@ export default function Resume() {
           </div>
         </div>
 
-        <div className="resume__experiences">
+        <div className="resume__experiences" id="experiences">
           <h3 className="resume__title">Work Experience</h3>
           <div className="resume__items">
             {experience.map((item) => (
@@ -27,23 +27,12 @@ export default function Resume() {
           </div>
         </div>
 
-        <div className="resume__skills">
+        <div className="resume__skills" id="skills">
           <h3 className="resume__title">Skills &amp; Experties</h3>
           <div className="resume__items">
-            {skills.map((item) => {
-              return (
-                <div className="resume__item">
-                  <div className="resume__item-left">
-                    {/* <p className="resume__time">{item.time}</p> */}
-                  </div>
-                  <div className="resume__item-right">
-                    <h4 className="resume__item-title">{item.type}</h4>
-                    {/* <h5 className="resume__item-subtitle">{item.degree}</h5> */}
-                    <p className="resume__item-description">{item.list}</p>
-                  </div>
-                </div>
-              );
-            })}
+            {skills.map((item) => (
+              <Item data={item} />
+            ))}
           </div>
         </div>
       </section>
