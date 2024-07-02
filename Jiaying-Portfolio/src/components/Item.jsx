@@ -2,7 +2,7 @@ import React from "react";
 import "./Item.scss";
 
 export default function Item({ data }) {
-  console.log(data);
+  // console.log(data);
   const { title, subTitle, time, descriptions } = data;
 
   return (

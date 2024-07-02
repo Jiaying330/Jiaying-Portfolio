@@ -19,7 +19,10 @@ export default function Resume() {
         </div>
 
         <div className="resume__experiences" id="experiences">
-          <h3 className="resume__title">Work Experience</h3>
+          <h3 className="resume__title">
+            Work <br />
+            Experience
+          </h3>
           <div className="resume__items">
             {experience.map((item) => (
               <Item data={item} />
@@ -28,7 +31,10 @@ export default function Resume() {
         </div>
 
         <div className="resume__skills" id="skills">
-          <h3 className="resume__title">Skills &amp; Experties</h3>
+          <h3 className="resume__title">
+            Skills <br />
+            &amp; Experties
+          </h3>
           <div className="resume__items">
             {skills.map((item) => (
               <Item data={item} />

@@ -15,24 +15,16 @@
     flex-grow: 1;
     background-color: #e9e5e1;
     text-align: center;
+    display: inline-block;
+    padding: 1.5rem;
+    cursor: pointer;
     &:not(:last-child) {
       border-right: 1px solid #2f2f2f;
     }
     border-bottom: 1px solid #2f2f2f;
     &:hover {
       border-bottom: 1px solid #9c8cae;
-    }
-    &:hover,
-    & a {
       color: #9c8cae;
     }
-  }
-
-  &__link:link,
-  &__link:visited {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    padding: 1.5rem;
   }
 }

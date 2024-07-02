@@ -91,6 +91,7 @@ const projects = [
     title: "Disney Home Page",
     time: "June 2024",
     descriptions: ["Recreation of Disney landing page"],
+    tech: ["React", "SCSS"],
     github: "https://github.com/Jiaying330/Disney-Home-page",
     live: "https://disney-home-page-flax.vercel.app/",
   },
@@ -103,6 +104,7 @@ const projects = [
       "Crafted a responsive and user-friendly interface using HTML, CSS, and React.js, modeled after The MET's original artwork search page for intuitive user interactions.",
       "Engineered a personalized 'Artwork Cart' feature that automatically organizes selected artworks by department and gallery, optimizing the visitor's tour experience.",
     ],
+    tech: ["React", "Axion", "REST API"],
     github: "https://github.com/Jiaying330/TheMet_Ready",
     live: "https://the-met-ready.vercel.app/",
   },
@@ -114,8 +116,10 @@ const projects = [
       "Implemented full CRUD (Create, Read, Update, Delete) functionality to manage books and notes within the library, allowing users to efficiently handle their digital collections.",
       "Designed a user interface with server-side rendering using EJS and JavaScript, enabling dynamic content delivery and responsive user interactions.",
     ],
+    tech: ["EJS", "Node.js", "Express", "PostgreSQL"],
     github: "https://github.com/Jiaying330/MyBookNotes",
     live: "",
+    tech: ["EJS", "Node.js", "Express", "Axios"],
   },
 
   {
@@ -126,6 +130,7 @@ const projects = [
       "Outlined website functionalities and designed the user interface using React, Redux, and Material UI.",
       "Developed and integrated search and statistical analysis features, utilizing AWS RDS, MySQL, MongoDB, and Node.js for backend processes.",
     ],
+    tech: ["React", "Node.js", "MySQL"],
   },
 
   {
@@ -139,6 +144,7 @@ const projects = [
     ],
     github: "https://github.com/Jiaying330/Break-Alert",
     live: "https://chrome.google.com/webstore/detail/break-alert/bilocpkncpeojgehfelfaecabikkdolb/",
+    tech: ["HTML", "CSS", "JavaScript"],
   },
 
   {
@@ -150,6 +156,7 @@ const projects = [
     ],
     github: "https://github.com/Jiaying330/Upside_Down",
     live: "https://jiaying330.github.io/Upside_Down/",
+    tech: ["JavaScript", "TypeScript", "crisp-game-lib"],
   },
 
   {
@@ -162,6 +169,7 @@ const projects = [
     ],
     github: "https://github.com/NathanWang00/One-Touch-RPG",
     live: "https://nathanwang00.github.io/One-Touch-RPG/?onetouchrpg/",
+    tech: ["JavaScript", "TypeScript", "crisp-game-lib"],
   },
 ];
 
