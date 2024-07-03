@@ -43,23 +43,25 @@ body {
 .section-title::before {
   content: "";
   position: absolute;
-  height: 2rem;
+  /* height: 2rem; */
+  height: 30%;
   width: 100%;
   background-color: aqua;
   top: 0;
   z-index: -1;
-  transform: translate(2rem, 5rem);
+  /* transform: translate(2rem, 5rem); */
+  transform: translate(10%, 180%);
 }
 .section-title::after {
   content: "";
   position: absolute;
-  height: 2rem;
+  height: 30%;
   width: 100%;
   background-color: brown;
   /* top: 0; */
   left: 0;
   z-index: -2;
-  transform: translate(0rem, 6rem);
+  transform: translate(0%, 220%);
 }
 
 @keyframes fadeIn {
