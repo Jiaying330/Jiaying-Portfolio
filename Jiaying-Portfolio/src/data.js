@@ -1,3 +1,5 @@
+const roles = ["front-end developer 💻", "game designer 🎮", "gym goer 🏋️‍♀️"];
+
 const social = [
   {
     name: "Github",
@@ -173,4 +175,4 @@ const projects = [
   },
 ];
 
-export { social, education, experience, skills, projects };
+export { roles, social, education, experience, skills, projects };

@@ -8,6 +8,9 @@
     // grid-template-columns: 1fr 1fr 1fr;
     // grid-template-rows: auto;
     padding-top: 6rem;
+    // &:not(:first-child) {
+    //   padding-top: 6rem;
+    // }
     gap: 1rem;
   }
 }
