@@ -1,14 +1,24 @@
 import React from "react";
 import "./Resume.scss";
+import { useInView } from "react-intersection-observer";
 
 import { education, experience, skills } from "../data";
 import Item from "./Item";
 
 export default function Resume() {
+  const [resumeRef, resumeInView, resumeEntry] = useInView({
+    threshold: 0.1,
+  });
   return (
     <>
-      <section className="resume section-container" id="resume">
-        <h2 className="section-title">Resume</h2>
+      <section
+        ref={resumeRef}
+        className={`resume section-container ${resumeInView ? "show" : ""}`}
+        id="resume"
+      >
+        <h2 className={`section-title ${resumeInView ? "show" : ""}`}>
+          Resume
+        </h2>
         <div className="resume__educations" id="educations">
           <h3 className="resume__title">Education</h3>
           <div className="resume__items">

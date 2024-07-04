@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./About.scss";
+import { useInView } from "react-intersection-observer";
 
 export default function About() {
+  const [aboutRef, aboutInView, aboutEntry] = useInView({
+    threshold: 0.2,
+  });
+  const [imgRef, imgInView, imgEntry] = useInView({
+    threshold: 0.1,
+  });
+  const [pRef, pInView, pEntry] = useInView({
+    threshold: 0.1,
+  });
   return (
     <>
-      <section className="about section-container" id="about">
-        <h2 className="section-title">About Me</h2>
+      <section
+        ref={aboutRef}
+        className={`about section-container ${aboutInView ? "show" : ""}`}
+        id="about"
+      >
+        <h2 className={`section-title ${aboutInView ? "show" : ""}`}>
+          About Me
+        </h2>
         <div className="about__content-container">
-          <p className="about__content">
+          <p ref={pRef} className={`about__content ${pInView ? "show" : ""}`}>
             Welcome to my corner of the internet! I'm Jiaying, a technology
             enthusiast with a passion for creativity and problem-solving.
             Originally a video game hobbyist, my interests evolved into game
@@ -43,7 +59,12 @@ export default function About() {
             contribute to impactful projects and collaborate with like-minded
             individuals. Let's connect and embark on this adventure together! */}
           </p>
-          <img src="/profile.png" alt="profile photo" className="about__img" />
+          <img
+            ref={imgRef}
+            src="/profile.png"
+            alt="profile photo"
+            className={`about__img ${imgInView ? "show" : ""}`}
+          />
         </div>
       </section>
     </>
