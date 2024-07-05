@@ -20,7 +20,14 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #1e1e1e;
+
   /* padding: 2rem; */
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .section-container {
@@ -44,7 +51,8 @@ body {
   position: relative;
   z-index: 0;
   display: inline-block;
-  transform: translateY(-80px);
+  transform: translateY(-100%);
+  /* transform: translateY(-80px); */
   transition: all 1s ease-in;
 }
 
