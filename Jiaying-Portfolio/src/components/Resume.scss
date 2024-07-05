@@ -8,20 +8,24 @@
 
   &__title {
     font-size: 4rem;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    &.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
 
 @media (max-width: 670px) {
   .resume {
     & > div {
-      // border-top: 1px solid #9c8cae;
-      // display: grid;
       grid-template-columns: 1fr;
       padding-top: 3rem;
     }
 
     &__title {
-      // font-size: 3vw;
       font-size: 2rem;
       padding-bottom: 3rem;
     }

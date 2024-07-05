@@ -1,12 +1,16 @@
 import React from "react";
 import "./Item.scss";
+import { useInView } from "react-intersection-observer";
 
 export default function Item({ data }) {
   // console.log(data);
   const { title, subTitle, time, descriptions } = data;
+  const [itemRef, itemInView, itemEntry] = useInView({
+    threshold: 0.1,
+  });
 
   return (
-    <div className="item">
+    <div ref={itemRef} className={`item ${itemInView ? "show" : ""}`}>
       <div className="item__left">
         <p className="item__time">{time}</p>
       </div>
