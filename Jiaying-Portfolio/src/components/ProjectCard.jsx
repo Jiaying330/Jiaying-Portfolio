@@ -1,12 +1,16 @@
 import React from "react";
 import "./ProjectCard.scss";
+import { useInView } from "react-intersection-observer";
 
 export default function ProjectCard({ data }) {
   const { title, time, descriptions, github, live, tech } = data;
+  const [cardRef, cardInView, cardEntry] = useInView({
+    threshold: 0.1,
+  });
 
   return (
     <>
-      <div className="project-card">
+      <div ref={cardRef} className={`project-card ${cardInView ? "show" : ""}`}>
         <h4 className="project-card__title">{title}</h4>
         <p className="project-card__tech">
           {tech.map((item, i) => {
